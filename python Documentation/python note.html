@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="navbar"><header>Python Documentation</header>
+      <ul>
+           <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+           <li><a href="#Hello world">Hello world</a></li>
+           <li><a class="nav-link" href="#Comment">Comment</a></li>
+           <li><a class="nav-link"href="#Variables">Variables</a></li>
+           <li><a class="nav-link" href="#Data Types">Data Types</a></li>
+           <li><a class="nav-link" href="#Numbers">Numbers</a></li>
+           <li><a class="nav-link" href="#Strings">Strings</a></li>
+           <li><a class="nav-link" href="#Booleans">Booleans</a></li>
+           <li><a class="nav-link" href="#Operators">Operators</a></li>
+           <li><a class="nav-link" href="#List">List</a></li>
+           <li><a class="nav-link" href="#Tuples">Tuples</a></li>
+           <li><a class="nav-link" href="#Sets">Sets</a></li>
+           <li><a class="nav-link" href="#Dictionaries">Dictionaries</a></li>
+      </ul>
+  
+    </nav>
+     <main id="main-doc"><section class="main-section" id="Introduction"><header>Introduction</header>
+    <article>
+   <h4>What is Python?</h4>
+   <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+   <ul><li>web development (server-side),</li>
+   <li>software development,</li>
+   <li>mathematics,</li>
+   <li>system scripting.</li></ul>
+   <h4>What can Python do?</h4>
+   <ul><li>Python can be used on a server to create web applications.</li>
+   <li>Python can be used alongside software to create workflows.</li>
+   <li>Python can connect to database systems. It can also read and modify files.</li>
+   <li>Python can be used to handle big data and perform complex mathematics.</li>
+   <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+</ul>
+<h4>Why Python?</h4>
+<ul><li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+<li>Python has a simple syntax similar to the English language.</li>
+<li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+<li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+<li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li></ul>
+    </article></section>
+    <section class="main-section" id="Hello world">
+        <header>Hello world</header>
+        <article>
+            <h4>Python Quickstart</h4>
+            <article>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.
+                The way to run a python file is like this on the command line:
+                <code> C:\Users\Your Name>python helloworld.py</code>
+                Where "helloworld.py" is the name of your python file.
+                helloworld.py
+                <code>print("Hello, World!")</code>
+              
+               
+             </article>
+        </article>
+    </section>
+    
+    <section class="main-section" id="Comment">
+        <header>Comment</header>
+        
+        <article>Comments starts with a #, and Python will ignore them:
+            
+            <code>#This is a comment
+                print("Hello, World!")</code>
+                
+                Comments can be placed at the end of a line, and Python will ignore the rest of the line:
+                
+                <code>print("Hello, World!") #This is a comment</code>
+        </article>
+    </section>
+    
+    <section class="main-section" id="Variables">
+        <header> Variables</header>
+        <br>
+        <article>Variables are containers for storing data values.</article>
+        <h4>Creating Variables</h4>
+        <article>Python has no command for declaring a variable.
+           A variable is created the moment you first assign a value to it.
+           <br>
+           <p>Example</p>
+           <code>x = 5  
+            y = "John"  
+            print(x)   
+            print(y)</code>
+            <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+            <p>Example</p>
+            <code>x = 4       # x is of type int 
+                x = "Sally" # x is now of type str 
+                print(x)</code>
+                <h4>Casting</h4>
+                <p>Example</p>
+                <code>x = str(3)    # x will be '3'
+                    y = int(3)    # y will be 3 
+                    z = float(3)  # z will be 3.0       
+                   </code>
+                   <h4>Get the Type</h4>
+                   <p>You can get the data type of a variable with the type() function.</p>
+                   <p>Example</p>
+                   <code>x = 5
+                    y = "John"
+                    print(type(x))
+                    print(type(y))</code>
+
+            
+        </article>
+    </section>
+    <section class="main-section" id="Data Types">
+        <header> Data Types</header>   
+        <h4>Built-in Data Types</h4>
+        <article>In programming, data type is an important concept.
+
+            Variables can store data of different types, and different types can do different things.
+            
+            Python has the following data types built-in by default, in these categories:</article>
+
+            <table>
+                <tr><th>Text Type:</th>
+                    <th>str</th>
+                </tr>
+                <td>Numeric Types:</td>
+                <td>int, float, complex</td>
+                
+            
+                <tr>
+                    <td>Sequence Types:</td>
+                    <td> list, tuple, range</td>
+                    
+                </tr>
+                <tr>
+                    <td>Mapping Type:</td>
+                    <td>dict</td>
+                </tr>
+                <tr>
+                    <td>Set Types:</td>
+                    <td>set, frozenset</td>
+                </tr>
+                <tr>
+                    <td>Boolean Type:</td>
+                    <td>bool</td>
+                </tr>
+                <tr>
+                    <td>Binary Types:</td>
+                    <td>	bytes, bytearray, memoryview</td>
+                </tr>
+            </table>
+    </section>
+    <section class="main-section" id="Numbers">
+        <header>Python Numbers</header>
+        <p>There are three numeric types in Python:</p>
+        <ul>
+          <li>int</li>
+          <li>float</li>
+          <li>complex</li>
+        </ul>
+        <p>Variables of numeric types are created when you assign a value to them:</p>
+      
+        <code>
+             <H4>Example</H4>
+            x = 1    # int
+            y = 2.8  # float
+            z = 1j   # complex
+        </code>
+
+    </section>
+    <section class="main-section" id="Strings">
+        <header>Strings</header>
+        <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.
+            'hello' is the same as "hello".You can display a string literal with the print() function:
+        </p>
+        <code>
+            <H4>Example</H4>
+            print("Hello")
+            print('Hello')
+        </code>
+        <h4>Assign String to a Variable</h4>
+        <p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:
+
+        </p>
+        <code>
+            <h4>Example</h4>
+            a = "Hello"
+            print(a)
+        </code>
+        <h4>Multiline Strings</h4>
+        <p>You can assign a multiline string to a variable by using three quotes:</p>
+        <code>
+            <h4>Example</h4>
+            <p>You can use three double quotes:</p>
+            a = """Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            used do eiusmod tempor incididunt
+            labore et dolore magna aliqua."""
+            print(a)
+        </code>
+        <p>Or three single quotes:</p>
+        <code>
+            <h4>Example</h4>
+            a = '''Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua.'''
+            print(a)
+
+        </code>
+        <h4>Strings are Arrays</h4>
+        <p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.
+            However, Python does not have a character data type, a single character is simply a string with a length of 1.
+            Square brackets can be used to access elements of the string
+        </p>
+        <code>
+            <h4>Example</h4>
+            <p>Get the character at position 1 (remember that the first character has the position 0):</p>
+            a = "Hello, World!"
+            print(a[1])
+
+        </code>
+
+    </section>
+    <section class="main-section" id="Booleans">
+        <header>Booleans</header>
+        <P>Booleans represent one of two values: True or False.</P>
+        <h4>Boolean Values</h4>
+        <p>In programming you often need to know if an expression is True or False.
+            you can evaluate any expression in Python, and get one of two answers, True or False.
+            When you compare two values, the expression is evaluated and Python returns the Boolean answer:
+        </p>
+        <code>
+            <h4>Example</h4>
+            print(10 > 9)
+            print(10 == 9)
+            print(10 < 9)
+        </code>
+        
+
+    </section>
+    <section class="main-section" id="Operators">
+        <h4>Operators</h4>
+        <p>Operators are used to perform operations on variables and values.
+           In the example below, we use the + operator to add together two values:
+        </p>
+        <p>Python divides the operators in the following groups:</p>
+        <li>Arithmetic operators</li>
+        <li>Assignment operators</li>
+        <li>Comparison operators</li>
+        <li>Logical operators</li>
+        <li>Identity operators</li>
+        <li>Membership operators</li>
+        <li>Bitwise operators</li>
+        <table></table>
+
+    </section>  
+    <section class="main-setion" id="List">
+        <h4>List</h4>
+        <code>
+            mylist = ["apple", "banana", "cherry"]
+        </code>
+        <article>
+            <h4>List</h4>
+            <p>Lists are used to store multiple items in a single variable.
+                 Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+                Lists are created using square brackets:
+            </p>
+            <code>
+                <h4>Example</h4>
+                <p>Create a list</p>
+                thislist = ["apple", "banana", "cherry"]
+                print(thislist)
+            </code>
+            <h4>List Items</h4>
+            <p>List items are ordered, changeable, and allow duplicate values.
+                List items are indexed, the first item has index [0], the second item has index [1] etc.
+            </p>
+        </article>
+        <h4>List Methods</h4>
+        <p>Python has a set of built-in methods that you can use on lists.</p>
+       
+
+        <table style="width:70%" >
+            <tr>
+              <th>Method</th>
+              <th>Description</th>
+              
+            </tr>
+            <tr>
+              <td>append():</td>
+              <td>Adds an element at the end of the list</td>
+            </tr>
+            <tr>
+                <td>clear():</td>
+                <td>Removes all the elements from the list</td>
+
+                
+            </tr>
+            <tr>
+                <td>copy():</td>
+                 <td>Returns a copy of the list</td>
+            </tr>
+            <tr>
+                <td>count():</td>
+                <td>Returns the number of elements with the specified value</td>
+            </tr>
+            <tr>
+                <td>extend():</td>
+                <td>Add the elements of a list (or any iterable), to the end of the current list</td>
+            </tr>
+            <tr>
+              <td>index():</td>
+              <td>	Returns the index of the first element with the specified value</td>
+           </tr>
+            <tr>
+                <td>insert():</td>
+                <td>Adds an element at the specified position</td>
+            </tr>
+            <tr>
+                <td>pop():</td>
+                <td>Removes the element at the specified position.</td>
+            </tr>
+            <tr>
+                <td>remove():</td>
+                <td>Removes the item with the specified value</td>
+            </tr>
+            <tr>
+                <td>reverse():</td>
+                <td>Reverses the order of the list</td>
+            </tr>
+            <tr>
+                <td>sort():</td>
+                <td>Sorts the list</td>
+        </tr>
+
+          </table>
+          
+    </section>
+    <section class="main-section" id="Tuples">
+        <h4>Tuples</h4>
+        <code>
+            mytuple = ("apple", "banana", "cherry")
+        </code>
+        <p>Tuples are used to store multiple items in a single variable.
+
+            Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+            
+            A tuple is a collection which is ordered and unchangeable and allow duplicate values.
+            
+            Tuples are written with round brackets.
+        </p>
+        <code>
+           <h4>Example</h4>
+            thistuple = ("apple", "banana", "cherry")
+            print(thistuple)
+        </code>
+        <h4>Tuples Methods</h4>
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+
+            </tr>
+            <tr>
+                <td>count():</td>
+                <td>Returns the number of times a specified value occurs in a tuple</td>
+            </tr>
+            <tr>
+                <td>index():</td>
+                <td>Searches the tuple for a specified value and returns the position of where it was found</td>
+            </tr>
+
+
+        </table>
+    </section>
+    <section class="main-section" id="Sets">
+        <h4>Sets</h4>
+        <code>
+            myset = {"apple", "banana", "cherry"}
+        </code>
+        <p>Sets are used to store multiple items in a single variable
+            Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.
+            A set is a collection which is unordered, unchangeable*, and unindexed.
+            
+        </p>
+        <p>Sets are written with curly brackets.</p>
+        <h4>Sets Methods</h4>
+
+        <table>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>add():</td>
+                <td>Adds an element to the set</td>
+            </tr>
+            <tr>
+                <td>Clear():</td>
+                <td>Removes all the elements from the set</td>
+            </tr>
+            <tr>
+                <td>copy():</td>
+                <td>Returns a copy of the set</td>
+            </tr>
+            <tr>
+                <td>difference():</td>
+                <td>Returns a set containing the difference between two or more sets</td>
+            </tr>
+            <tr>
+                <td>r update():</td>
+                <td>Removes the items in this set that are also included in another, specified set</td>
+            </tr>
+            <tr>
+                <td>discard():</td>
+                <td>Remove the specified item</td>
+            </tr>
+            <tr>
+                <td>intersection():</td>
+                <td>Returns a set, that is the intersection of two other sets</td>
+            </tr>
+            <tr>
+                <td>intersection update():</td>
+                <td>Removes the items in this set that are not present in other, specified set(s)</td>
+            </tr>
+        </table>
+
+    </section>
+    <section class="main-section" id="Dictionaries">
+       <h4>Dictionaries</h4>
+       <code>
+        thisdict = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+          }
+       </code>
+       <p>Dictionaries are used to store data values in key:value pairs.
+          A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+      </p>
+      <p>
+        As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+        Dictionaries are written with curly brackets, and have keys and values:
+      </p>
+
+    </section>
+
+
+
+    </main>
+        
+</body>
+</html>   

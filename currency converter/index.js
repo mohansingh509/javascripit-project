@@ -12,7 +12,7 @@ updateRate()
 
 function updateRate() {
   fetch(
-    `https://v6.exchangerate-api.com/v6/a8ace2be843fa2e89d51f934/latest/${currencyFirstEl.value}`
+    `https://v6.exchangerate-api.com/v6/YOUr_API_KEY/latest/${currencyFirstEl.value}`
   )
     .then((res) => res.json())
     .then((data) => {

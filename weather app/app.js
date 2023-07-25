@@ -1,4 +1,4 @@
-const API_key="ea714956e2e8f454c7c5edc056ac2436"
+const API_key=//your API key
 const form = document.querySelector("form")
 const search = document.querySelector("#search")
 const weather = document.querySelector("#weather")
